@@ -4,7 +4,7 @@ import { crearTodoHtml } from './js/componentes';
 
 
 const tarea = new Todo('Iniciar Curso JS');
-const todoList = new TodoList();
+export const todoList = new TodoList();
 
 // tarea.completado = true;
 
