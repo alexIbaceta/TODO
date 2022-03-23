@@ -8,7 +8,9 @@ export class TodoList {
     }
 
     eliminarTodo(id) {
-
+        this.todos=this.todos.filter(elemento=>elemento.id!=id);
+        
+        // console.log(elementoBorrar);
     }
 
     marcarCompletado(id) {
