@@ -26,4 +26,12 @@ export class TodoList {
         this.todos = this.todos.filter(elemento => !elemento.completado);
     }
 
+    guardarLocalStorage() {
+
+    }
+
+    cargarLocalStorage() {
+
+    }
+
 }
