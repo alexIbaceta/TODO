@@ -8,8 +8,8 @@ export class TodoList {
     }
 
     eliminarTodo(id) {
-        this.todos=this.todos.filter(elemento=>elemento.id!=id);
-        
+        this.todos = this.todos.filter(elemento => elemento.id != id);
+
         // console.log(elementoBorrar);
     }
 
@@ -23,7 +23,7 @@ export class TodoList {
     }
 
     eliminarCompletado() {
-
+        this.todos = this.todos.filter(elemento => !elemento.completado);
     }
 
 }
