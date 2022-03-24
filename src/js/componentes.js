@@ -30,6 +30,7 @@ txtInput.addEventListener('keyup', (event) => {
         todoList.nuevoTodo(nuevoTodo);
         crearTodoHtml(nuevoTodo);
         txtInput.value = '';
+        console.log(todoList.todos);
     }
 });
 

@@ -1,6 +1,7 @@
 export class TodoList {
     constructor() {
-        this.todos = [];
+        // this.todos = [];
+        this.cargarLocalStorage();
     }
 
     nuevoTodo(todo) {
@@ -31,12 +32,12 @@ export class TodoList {
     }
 
     guardarLocalStorage() {
-        localStorage.setItem('todo', this.todos);
+        localStorage.setItem('todo', JSON.stringify(this.todos));
 
     }
 
     cargarLocalStorage() {
-
+        this.todos=(localStorage.getItem('todo'))?JSON.parse(localStorage.getItem('todo')):[];
     }
 
 }
