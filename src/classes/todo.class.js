@@ -1,12 +1,12 @@
 export class Todo {
 
-static fromJason( {id, tarea, completado, creado} ){
-    const tempTodo = new Todo( tarea );
-    tempTodo.id=id
-    tempTodo.completado=completado;
-    tempTodo.creado=creado;
-    return tempTodo;
-}
+    static fromJson({ id, tarea, completado, creado }) {
+        const tempTodo = new Todo(tarea);
+        tempTodo.id = id
+        tempTodo.completado = completado;
+        tempTodo.creado = creado;
+        return tempTodo;
+    }
 
     constructor(tarea) {
         this.tarea = tarea;
@@ -16,7 +16,7 @@ static fromJason( {id, tarea, completado, creado} ){
         this.creado = new Date();
     }
 
-    imprimirClase(){
+    imprimirClase() {
         console.log(`${this.tarea} - ${this.id}`);
     }
 }
